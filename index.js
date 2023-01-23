@@ -9,6 +9,7 @@ class Cell {
         this.handler;
         this.above = [];
         this.left = [];
+        this.invalidCount = 0;
     }
 
     getSymbol() {
@@ -18,6 +19,7 @@ class Cell {
 
 
     invalid(){
+        this.invalidCount = this.invalidCount + 1;
         let cell = this.element;
         cell.removeEventListener('click', this.handler);
         cell.setAttribute('class', 'cell invalid');
@@ -27,10 +29,13 @@ class Cell {
     }
     
     valid(){
-        let cell = this.element;
-        cell.setAttribute('class', 'cell');
-        cell.addEventListener('click', this.handler);
         
+        if(this.invalidCount == 0){
+            let cell = this.element;
+            cell.setAttribute('class', 'cell');
+            cell.addEventListener('click', this.handler);
+        }
+        this.invalidCount = this.invalidCount - 1;
     }
 
     invalidLeft(){
