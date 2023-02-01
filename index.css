@@ -1,0 +1,18 @@
+.navbutton {
+  text-decoration: none;
+  color: white;
+  background-color: #2E3340;
+  display: block;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 40%;
+  padding-top: 30px;
+}
+
+h1{
+    align-self: center;
+    color: #2E3340;
+    margin-left: 30%;
+}
