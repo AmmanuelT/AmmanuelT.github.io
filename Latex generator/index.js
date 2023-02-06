@@ -32,7 +32,7 @@ function makeTable(n) {
                     si = 'alpha';
                   break;
                 case "β":
-                    si = 'betta';
+                    si = 'beta';
                   break;
                 case "δ":
                     si = 'delta';
@@ -44,7 +44,7 @@ function makeTable(n) {
                     si = 'alpha';
                   break;
                 case "b":
-                    si = 'betta';
+                    si = 'beta';
                   break;
                 case "d":
                     si = 'delta';
