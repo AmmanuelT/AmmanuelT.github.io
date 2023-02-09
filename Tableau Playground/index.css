@@ -1,0 +1,182 @@
+:root{
+    --primary-color: #2E3340;
+    --secondary-color: #F9F8F9;
+    --primary-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+body{
+    background-color: var(--secondary-color)
+}
+.navbutton {
+    text-decoration: none;
+    color: white;
+    background-color: #2E3340;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 200px;
+    display: inline-block;
+    font-family: var(--primary-font-family);
+  }
+
+
+.cell{
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-width: 0.1px;
+    position: absolute;
+    text-align: center;
+    justify-items: center;
+}
+
+.cell:hover{
+    background-color: var(--secondary-color);
+}
+
+.invalid{
+    background-color: gray;
+}
+.text{
+    margin-top: 40%;
+}
+#options {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    border-style: solid;
+    background-color: white;
+
+}
+.cell-option{
+    height: 16.6px;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.1px;
+}
+.cell-option:hover{
+    background-color: var(--secondary-color);
+}
+.generate-button{
+    font-family: var(--primary-font-family);
+    font-size: medium;
+    text-align: center;
+    border-bottom: solid;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+
+.tool{
+    background-color: red;
+    height: 100px;
+    width: 90px;
+}
+.info{
+    background-color: #2E3340;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  #op1{
+    margin-left:90%;
+  }
+  .navb{
+    width: 100%;
+    margin-left: 30vw;
+    display: inline-block;
+  }
+  
+  #tool{
+    height: 80vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:#2E3340;
+    color: #FDFDFC;
+    border-radius: 3px;
+    font-family: var(--primary-font-family);
+  }
+ 
+  #initial-prompt{
+    width:fit-content;
+    font-family: var(--primary-font-family);
+    padding: 10px;
+    margin-left: 40vw;
+    height: 100%;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    padding-left: 30px;
+    
+  }
+
+  .initial-prompt-options{
+    padding-bottom: 10px;
+ 
+  }
+
+  #tableau{
+    position: absolute;
+    min-width: 200px;
+    min-height: 200px;
+    top: 118px;
+    left: 190px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    border-radius: 3px;
+    padding: 1px;
+    background-color: #FDFDFC;
+    border-width: 0.1px;
+    border-style: solid;
+  }
+
+  h1{
+    padding-left: 26vw;
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+  }
+  .title{
+    font-weight: bold;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .info-text{
+    padding-top: 30px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: black;
+    border-width: 1px;
+    padding-bottom: 30px;
+    background-color: #3c4354;
+  }
+
+  .options{
+    background-color: #2E3340;
+    border-width:0.1px;
+  }
