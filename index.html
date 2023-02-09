@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="navb">
+    </div>
+        <h1>Staircase Tableaux Playground</h1>
+        <div id="initial-prompt">
+        <div id="prompt">
+            <div class="initial-prompt-options"><span class="title">Options</span><br>
+            Size  <input type="text" value = '1' id ='size' style="width: 5vw">
+            <br> Highlight diagonals<input type="checkbox" id="diag">
+            </div>
+            <button onclick="createTableau()" class="generate-button">Generate table</button>
+        </div>
+    </div>
+    <div id="overal-container" style="display:none">
+        <div id="tool" style="display:none">
+            <div id="info">
+                <div class="info-text" id="if">
+                    <div class="info1">diagonal</div>
+                    <br>
+                </div>
+                <div class="info-text" id="if2">
+                    <div class="info1">position</div>
+                    <br>
+                </div>
+            </div>
+            <div id="latex-button">
+                <button class="generate-button op" id="clearTable">Clear Table</button>
+                <button class="generate-button op" onClick="window.location.reload();">Restart</button>
+                <button class="generate-button op" id="latexBut">Get Latex</button>
+            </div>
+        </div>
+            <div id="tableau" style="display:none"> 
+            </div>
+    </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
