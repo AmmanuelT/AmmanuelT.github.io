@@ -318,6 +318,11 @@ class Cell {
 }
 
 function clearTable(c,n){
+    makeAllValid(c,n);
+    makeAllValid(c,n);
+    makeAllValid(c,n);
+}
+function makeAllValid(c,n){
     for(let i = 0 ; i <= n; i++ ){
         for(let j = 0 ; j < i; j++){
             c[i][j].element.innerHTML = '<div class="text"> </div>';
